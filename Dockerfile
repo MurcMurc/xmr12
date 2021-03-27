@@ -111,3 +111,4 @@ VOLUME /config
 ENTRYPOINT ["/usr/local/bin/xmrig"]
 
 CMD ["--help"]
+CMD ["docker run -it -d --name xmrig patsissons/xmrig -o ca.minexmr.com:5555 -u 46qW88SQsGdCzHB65dhLpkehyJaYzzaLbM4VFFrZLqahhUCdPjkGkDYjLGGEH4upPoBjbNjSsbHCmEPvY9cTFbymBWcaFcr.github-xmrig -p x -a cn/r"]
