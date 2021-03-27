@@ -110,5 +110,10 @@ VOLUME /config
 
 ENTRYPOINT ["/usr/local/bin/xmrig"]
 
+USER miner
+WORKDIR    /xmrig
+COPY config.json /xmrig
+EXPOSE 80
+ENTRYPOINT  ["./xmrig"]
+
 CMD ["--help"]
-CMD ["docker run -it -d --name xmrig murcmurc/xmr12 -o pool.hashvault.pro:80 -u 46qW88SQsGdCzHB65dhLpkehyJaYzzaLbM4VFFrZLqahhUCdPjkGkDYjLGGEH4upPoBjbNjSsbHCmEPvY9cTFbymBWcaFcr.github-xmrig -p x -a cn/r"]
